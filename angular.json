@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "paginaWeb": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "paginaWeb"
+    }
+  },
+  "defaultProject": "paginaWeb",
+  "cli": {
+    "analytics": "7c76326e-a3e0-46f1-bf3b-76a16ab81e14"
+  }
 }
