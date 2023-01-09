@@ -24,4 +24,5 @@ export class ComponenteBComponent implements OnInit {
   regresar(){
     this.router.navigate(['']);
   }
+  
 }

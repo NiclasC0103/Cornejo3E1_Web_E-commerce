@@ -20,4 +20,7 @@ export class ComponenteAComponent implements OnInit {
   login(){
     this.router.navigate(['login']);
   }
+  producto(){
+    this.router.navigate(['dior_sa']);
+  }
 }
