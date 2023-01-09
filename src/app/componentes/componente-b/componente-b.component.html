@@ -1,16 +1,11 @@
 <div class="login-page">
     <div class="form">
-      <form class="register-form">
-        <input type="text" placeholder="name"/>
-        <input type="password" placeholder="password"/>
-        <input type="text" placeholder="email address"/>
-        <button>create</button>
-        <p class="message">Already registered? <a href="#">Sign In</a></p>
-      </form>
       <form class="login-form">
-        <input type="text" placeholder="username"/>
-        <input type="password" placeholder="password"/>
-        <button>login</button>
+        <input type="email" class="form-control" id="InputEmail" placeholder="Ingresa tu Correo"
+      [(ngModel)]="correo" name="email">
+        <input type="password" class="form-control" id="InputPassword" placeholder="Ingresa tu Contraseña"
+      [(ngModel)]="pass" name="passw">
+      <button type="button" (click)="datos()" (click)="regresar()">Login</button>
         <p class="message">No tienes una cuenta? <a href="">Regresar</a></p>
       </form>
     </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-componente-b',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponenteBComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+  correo: any
+  pass: any
 
   ngOnInit(): void {
+    this.correo
+    this.pass
+    this.datos();
   }
-
+  datos(){
+    localStorage.setItem('correo', this.correo)
+    localStorage.setItem('passw', this.pass)
+  }
+  regresar(){
+    this.router.navigate(['']);
+  }
 }

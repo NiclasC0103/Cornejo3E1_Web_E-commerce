@@ -9,8 +9,13 @@ import { Router } from '@angular/router';
 export class ComponenteAComponent implements OnInit {
 
   constructor(private router: Router) { }
-
+  correo: any
   ngOnInit(): void {
+    this.correo
+    this.correolog
+  }
+  correolog(){
+    this.correo=localStorage.getItem('correo')
   }
   login(){
     this.router.navigate(['login']);
