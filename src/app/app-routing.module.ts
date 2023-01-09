@@ -6,7 +6,7 @@ import { ComponenteBComponent } from './componentes/componente-b/componente-b.co
 
 const routes: Routes = [
   { path: '', component: ComponenteAComponent },
-  { path: 'catalogo_uno', component: ComponenteBComponent }
+  { path: 'login', component: ComponenteBComponent }
 ];
 
 @NgModule({
