@@ -12,7 +12,7 @@ export class ComponenteAComponent implements OnInit {
   correo: any
   ngOnInit(): void {
     this.correo
-    this.correolog
+    this.correolog()
   }
   correolog(){
     this.correo=localStorage.getItem('correo')
