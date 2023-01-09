@@ -74,17 +74,13 @@ p{
   border-color: #434343;
   transform: scale(1.1);
 }
-label.first-color{
-  margin-left: 500px;
-  background-image: url('https://assets.codepen.io/1462889/mat1.jpg');
-}
 
 .img-wrap{
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 0;
   width: 500px;
-  height: 410px;
+  height: 700px;
   display: inline-block;
   z-index: 9;
   transition: all 550ms linear;
@@ -92,7 +88,7 @@ label.first-color{
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url('https://assets.codepen.io/1462889/ch1.png');
+  background-image: url('https://fragrance.org/wp-content/uploads/2020/09/FOTY-Mens-Luxury.png');
   opacity: 0;
 }
 .for-color-1:checked ~ .img-wrap.chair-1{
