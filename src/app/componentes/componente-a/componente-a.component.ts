@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { LocalizedString } from '@angular/compiler/src/output/output_ast';
+import { Component, OnInit, ɵɵcontainerRefreshEnd } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -30,5 +31,9 @@ export class ComponenteAComponent implements OnInit {
   }
   carrito(){
     this.router.navigate(['cart']);
+  }
+  clear(){
+    localStorage.clear();
+    location.reload();
   }
 }

@@ -11,7 +11,7 @@ export class ComponenteEComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  regresar(){
-    this.router.navigate(['']);
+  facture(){
+    this.router.navigate(['factura']);
   }
 }
