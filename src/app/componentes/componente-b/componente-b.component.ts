@@ -11,7 +11,7 @@ export class ComponenteBComponent implements OnInit {
   constructor(private router: Router) { }
   correo: any
   pass: any
-
+  
   ngOnInit(): void {
     this.correo
     this.pass
@@ -24,5 +24,7 @@ export class ComponenteBComponent implements OnInit {
   regresar(){
     this.router.navigate(['']);
   }
-  
+  nouser(){
+    this.router.navigate(['nouser']);
+  }
 }

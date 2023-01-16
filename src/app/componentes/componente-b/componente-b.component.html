@@ -5,7 +5,12 @@
       [(ngModel)]="correo" name="email">
         <input type="password" class="form-control" id="InputPassword" placeholder="Ingresa tu Contraseña"
       [(ngModel)]="pass" name="passw">
-      <button type="button" (click)="datos()" (click)="regresar()">Login</button>
+        <div *ngIf="correo != 'cornejo.n0103@gmail.com'; else correcto"> 
+          <button type="button" (click)="nouser()">Login</button>
+        </div>
+        <ng-template #correcto>
+          <button type="button" (click)="datos()" (click)="regresar()">Login</button>
+        </ng-template>
         <p class="message">No tienes una cuenta? <a href="">Regresar</a></p>
       </form>
     </div>
