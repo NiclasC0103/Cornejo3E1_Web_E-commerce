@@ -23,4 +23,7 @@ export class ComponenteAComponent implements OnInit {
   producto(){
     this.router.navigate(['dior_sa']);
   }
+  carrito(){
+    this.router.navigate(['cart']);
+  }
 }
