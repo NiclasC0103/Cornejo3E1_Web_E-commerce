@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 export class ComponenteDComponent implements OnInit {
 
   constructor(private router: Router) { }
-  price: any
-  nom: any
-  tot: any
+  price: any =0
+  nom: any= 0
+  tot: any= 0
   ngOnInit(): void {
     this.checkout
     this.pricelog();

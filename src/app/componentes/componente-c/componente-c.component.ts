@@ -31,4 +31,7 @@ export class ComponenteCComponent implements OnInit {
   totlog(){
     this.tot=localStorage.setItem('tot', "$224.00")
   }
+  back(){
+    this.router.navigate(['']);
+  }
 }
