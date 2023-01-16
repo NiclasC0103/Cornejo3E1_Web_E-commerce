@@ -10,12 +10,17 @@ export class ComponenteAComponent implements OnInit {
 
   constructor(private router: Router) { }
   correo: any
+  carrovalue: any
   ngOnInit(): void {
     this.correo
     this.correolog()
+    this.carrorecu()
   }
   correolog(){
     this.correo=localStorage.getItem('correo')
+  }
+  carrorecu(){
+    this.carrovalue=localStorage.getItem('carro')
   }
   login(){
     this.router.navigate(['login']);

@@ -9,10 +9,26 @@ import { Router } from '@angular/router';
 export class ComponenteCComponent implements OnInit {
 
   constructor(private router: Router) { }
-
+  carrovalue:any
+  price: any
+  nom: any
+  tot: any
   ngOnInit(): void {
+    this.carrolog();
+    this.pricelog();
+    this.nomlog();
+    this.totlog();
   }
-  carrito(){
-    this.router.navigate(['cart']);
+  carrolog(){
+    this.carrovalue=localStorage.setItem('carro', "1")
+  }
+  pricelog(){
+    this.price=localStorage.setItem('precio', "$189.00")
+  }
+  nomlog(){
+    this.nom=localStorage.setItem('nom', "DIOR Sauvage")
+  }
+  totlog(){
+    this.tot=localStorage.setItem('tot', "$224.00")
   }
 }
